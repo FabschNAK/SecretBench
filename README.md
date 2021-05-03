@@ -4,7 +4,7 @@
 ---
 
 SecretBench is a benchmark for secret scanning tools to evaluate false negative rates.
-It is composed of several batteries of various credentials, keys, and tokens, with a wide variety of formatting and syntax  variations. The end-goal of this project is to ensure that all secret scanning software can adequately handle such variations, thus reducing then number of false negatives for all users.
+It is composed of a battery of various credentials, keys, and tokens, with a wide variety of formatting and syntax  variations. The end-goal of this project is to ensure that all secret scanning software can adequately handle such variations, thus reducing then number of false negatives for all users.
 
 ### Why?
 
