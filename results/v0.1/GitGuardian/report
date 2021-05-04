@@ -25,7 +25,7 @@ Line 596, all extensions, "MongoDB URI"
 Line 599, all extensions, "FTP URI credentials"
 Line 891, all extensions, "Base64 Basic Authentication"
 
-Total caught (all extentions): 168/7924*
+Total caught (all extensions): 168/7924*
 Caught on all extensions: 24/1132*
 Caught: 2.12%
 Missed: 97.88%
