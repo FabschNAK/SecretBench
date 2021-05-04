@@ -1,0 +1,35 @@
+On v0.1,
+GitGuardian Detected:
+Line 34, all extensions, "Generic High Entropy Secret"
+Line 36, all extensions, "Generic High Entropy Secret"
+Line 40, all extensions, "Generic Password"
+Line 43, all extensions, "Generic High Entropy Secret"
+Line 44, all extensions, "Generic High Entropy Secret"
+Line 45, all extensions, "Generic High Entropy Secret"
+Line 46, all extensions, "Generic High Entropy Secret"
+Line 49, all extensions, "Username Password"
+Line 51, all extensions, "Generic High Entropy Secret"
+Line 54, all extensions, "Generic High Entropy Secret"
+Line 138, all extensions, "Generic Password"
+Line 376, all extensions, "Slack User Token"
+Line 495, all extensions, "Generic Password"
+Line 501, all extensions, "Generic Password"
+Line 502, all extensions, "Generic Password"
+Line 561, all extensions, "Generic Password"
+Line 562, all extensions, "Generic Password"
+Line 563, all extensions, "Generic Password"
+Line 581, all extensions, "Base64 Basic Authentication"
+Line 584, all extensions, "Base64 Basic Authentication"
+Line 595, all extensions, "MongoDB URI"
+Line 596, all extensions, "MongoDB URI"
+Line 599, all extensions, "FTP URI credentials"
+Line 891, all extensions, "Base64 Basic Authentication"
+
+Total caught (all extentions): 168/7924*
+Caught on all extensions: 24/1132*
+Caught: 2.12%
+Missed: 97.88%
+257/257 detectors activated (default configuration was 255/257)
+"DEVELOPER & OPEN SOURCE" Plan (default configuration)
+
+* the '.cs' extension in v0.1 was missing data
