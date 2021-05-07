@@ -1,0 +1,1 @@
+sh "set -e | curl -i -H 'X-Api-Key: 12345abcdefghijklmno' -T BackEnd/build/libs/example_api-0.1.0.jar>>fail

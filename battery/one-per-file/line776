@@ -1,0 +1,1 @@
+spring.datasource.password=${SQL_SERVER_PS} >>pass

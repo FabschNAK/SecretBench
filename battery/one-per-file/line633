@@ -1,0 +1,1 @@
+ods.setURL("jdbc:oracle:thin:scott/tiger@dlsun511:1721:orcl");>>fail

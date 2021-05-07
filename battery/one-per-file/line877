@@ -1,0 +1,1 @@
+%ghd-d00-etl-platform ALL= NOPASSWD: /usr/bin/su - hd-d00-etl-platform >>pass

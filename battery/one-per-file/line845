@@ -1,0 +1,1 @@
+   <add key="ConnectionString_NewBusinessMT" value="Server=awsbman-t,1433;Database=NewBusinessMT;User ID=MiddleTier;Password=#{Replace_Value}" /> >>pass

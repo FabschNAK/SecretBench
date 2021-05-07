@@ -1,0 +1,1 @@
+this.login({ username: this.registerViewModel.user.username, password: this.registerViewModel.reenterPassword }); >>pass

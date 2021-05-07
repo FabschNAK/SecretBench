@@ -1,0 +1,1 @@
+password: ${GIT_PASSWORD}, user = ${GIT_USER}, url = https://woopwoopnotarealsite.com/10min >>pass

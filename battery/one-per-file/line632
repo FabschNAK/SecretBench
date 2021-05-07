@@ -1,0 +1,1 @@
+flywayUrl = 'jdbc:oracle:thin:user2/password2@sub.domain.org:1525/abcv2.world'>>fail

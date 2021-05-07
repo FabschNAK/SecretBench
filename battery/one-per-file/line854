@@ -1,0 +1,1 @@
+passwd: String "#{password_var}">>pass

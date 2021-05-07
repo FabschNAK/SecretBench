@@ -1,0 +1,1 @@
+sh "set -e | curl -i -H 'Authorization: Basic ${AuthTokenVariable}' -T BackEnd/build/libs/example_api-0.1.0.jar>>pass
