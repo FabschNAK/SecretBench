@@ -1,4 +1,4 @@
 - Standardize 'results' folder structure / reporting.
-- Add filename variations in the one-per-file folder.
+- Add file type variations in the one-per-file folder.
 - Add variations of all existing credentials to be sure there is at least 1 version not including words like "test" or "exmaple" and at least 1 version including such words.
 - Add multi-match secrets (eg one line with an AWS key id, subsequent line with the actual secret).
