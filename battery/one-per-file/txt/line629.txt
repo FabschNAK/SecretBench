@@ -1,0 +1,1 @@
+String connString="jdbc:oracle:thin:@prodHost:1521:ORCL";>>pass

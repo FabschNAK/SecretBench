@@ -1,0 +1,1 @@
+     "resolved": "https://artifactory.mybiz.com:443/repo/api/npm/npm/@babel/package/-/package-1.2.3.tgz",>>pass

@@ -1,0 +1,1 @@
+<password>%%JDBCPassword/UBIT/UBIT_DIA_EDIT_Password%%</password> >>pass

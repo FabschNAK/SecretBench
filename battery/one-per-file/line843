@@ -1,1 +1,0 @@
-Command32="Server=EasyBezy-t,1433;User=EasyBezy;PWD=#{Replace_Value};Initial Catalog=EasyBezy;Persist Security Info=True;MultipleActiveResultSets=True;USENT=Y;">>pass

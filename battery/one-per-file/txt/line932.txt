@@ -1,0 +1,1 @@
+ntlmCredential.setPassword("{{test_variable}}");location.setLocation("Origami Lane");visitationFrequency(12); >>pass

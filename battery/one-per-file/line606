@@ -1,1 +1,0 @@
-'database': 'mongodb://${USER_ENV}:${PASS_ENV}@Abc12345.mysite.com:27010,Abc12345.mysite.com:27010/LUSER?set=PROD'>>pass

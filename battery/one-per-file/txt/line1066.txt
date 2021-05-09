@@ -1,0 +1,1 @@
+password = "usr/bin/local/pwd" >>pass

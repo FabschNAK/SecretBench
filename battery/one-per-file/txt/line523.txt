@@ -1,0 +1,1 @@
+ntlmCredential.setPass(credentials.Password);>>pass

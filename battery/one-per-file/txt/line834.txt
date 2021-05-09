@@ -1,0 +1,1 @@
+Application/Connections/Database/ARRXY/password=      // >>pass

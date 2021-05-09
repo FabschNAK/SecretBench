@@ -1,0 +1,1 @@
+${USER_ENV}:${PASS_ENV}@abcwhatever.mysite.com>>pass

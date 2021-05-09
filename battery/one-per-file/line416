@@ -1,1 +1,0 @@
-curl -X GET https://api.heroku.com/apps/01234567-89ab-cdef-0123-456789abcdef -H "Accept: application/vnd.heroku+json; version=3" -H "Authorization: Bearer $TUTORIAL_KEY">>fail

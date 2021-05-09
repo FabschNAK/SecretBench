@@ -1,1 +1,0 @@
-{ "password": "${GIT_PASSWORD}" }' ${sourceAPIUrl}/v1/auth/src-cloud-prd/engineering/login/${GIT_USERNAME} | jq -r .auth.client_token` >>pass

@@ -1,0 +1,1 @@
+String mykey = "AKIAI44QH8DHBEXAMPLE">>fail

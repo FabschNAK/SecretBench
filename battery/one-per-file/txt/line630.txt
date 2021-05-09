@@ -1,0 +1,1 @@
+jdbc:oracle:thin:user1/password1@sub.domain.com:1525/abcv1.world>>fail

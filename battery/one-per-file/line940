@@ -1,1 +1,0 @@
-password: String "#{test_variable}", user: String "scottie", location: String "Botswana", address: String "123 Not Real Ave.",>>pass

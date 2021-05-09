@@ -1,1 +1,0 @@
-password: String "${test_value", user: String "${variable}", location: String "Botswana", address: String "123 Not Real Ave.",>>fail

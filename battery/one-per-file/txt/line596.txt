@@ -1,0 +1,1 @@
+"ConnectionString": "mongodb://ABCDUSER:1abCDEfg@Abc1234.mysite.com:27010,Abc1234.mysite.com:27010/AUSER?set=PROD",>>fail

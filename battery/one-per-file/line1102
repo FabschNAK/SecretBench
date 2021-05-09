@@ -1,1 +1,0 @@
-secret: String "${SECRET_KEY}" >>pass

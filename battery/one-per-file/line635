@@ -1,1 +1,0 @@
-    url: "jdbc:oracle:thin:@ldap://oid.biz.com:389/cn=OracleContext,dc=biz,dc=com/abcde001" >>pass

@@ -1,1 +1,0 @@
-<Secret primary="#{pass_val1" /><User value="#{variable}" /><Location value="1234 Johnny Ave."  >>fail

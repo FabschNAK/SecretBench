@@ -1,0 +1,1 @@
+if [[ `echo "$KEY" | grep -E "${delimited_reArray[@]}"` ]]; then>>pass

@@ -1,0 +1,1 @@
+spring.datasource.password=$unic0Rn<3{er>>fail

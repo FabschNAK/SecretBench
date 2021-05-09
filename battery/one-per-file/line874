@@ -1,1 +1,0 @@
-'{ "password": "${GIT_PASSWORD}" }' ${sourceAPIUrl}/v/auth/vl >>pass

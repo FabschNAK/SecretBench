@@ -1,1 +1,0 @@
-CAcreateserial -passin pass:$CAPASSWORD -sha256 >>pass
