@@ -1,0 +1,139 @@
+name: "OSS demo toolchain"
+
+on: [push]
+
+jobs:
+
+  # Trivy:
+  #   name: Trivy
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v3
+
+  #     - name: Run Trivy vulnerability scanner in IaC mode
+  #       uses: aquasecurity/trivy-action@0.28.0
+  #       with:
+  #         scan-type: 'config'
+  #         hide-progress: true
+  #         format: 'sarif'
+  #         output: 'trivy-results.sarif'
+  #         exit-code: '0'
+  #         severity: 'CRITICAL,HIGH,MEDIUM,LOW'
+
+  #     - name: Upload Trivy scan results to GitHub Security tab
+  #       uses: github/codeql-action/upload-sarif@v3
+  #       with:
+  #         sarif_file: 'trivy-results.sarif'
+
+  Semgrep:
+    name: Semgrep
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Semgrep
+        run: python3 -m pip install --upgrade requests && python3 -m pip install semgrep
+
+      - name: Run Semgrep in default mode
+        run: semgrep scan >> semgrep-scan.txt
+
+      - name: Upload Semgrep Scan Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: Semgrep Scan Report
+          path: semgrep-scan.txt
+
+  # NPM-Audit:
+  #   name: NPM-Audit
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v3
+
+  #     - name: Run npm install
+  #       run: npm install
+
+  #     - name: Run npm audit
+  #       run: npm audit
+  #       continue-on-error: true
+
+  # ZAP:
+  #   name: OWASP ZAP
+  #   runs-on: ubuntu-latest
+  #   steps:
+
+  #     - name: Prepare report directory
+  #       run: |
+  #         mkdir -p zap-reports
+  #         chmod 777 zap-reports  # Volle Schreibrechte für das Verzeichnis
+
+  #     - name: Run ZAP Baseline Scan
+  #       run: |
+  #         docker run --rm -v $(pwd)/zap-reports:/zap/wrk/:rw -w /zap/wrk -u zap -t ghcr.io/zaproxy/zaproxy:stable zap-baseline.py -t https://juice-shop.herokuapp.com/ -r zap_report.html
+  #       continue-on-error: true
+
+  #     - name: Upload ZAP HTML Report
+  #       uses: actions/upload-artifact@v4
+  #       with:
+  #         name: ZAP HTML Report
+  #         path: zap-reports/zap_report.html
+
+  # Inspector:
+  #   name: Inspector
+  #   runs-on: ubuntu-latest
+
+  #   steps:
+  #     - name: Checkout Repository
+  #       uses: actions/checkout@v3
+
+  #     - name: Set up AWS CLI
+  #       uses: aws-actions/configure-aws-credentials@v2
+  #       with:
+  #         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  #         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  #         aws-region: eu-central-1
+
+  #     # - name: Log in to Amazon ECR
+  #     #   run: |
+  #     #     aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin 083592952377.dkr.ecr.eu-central-1.amazonaws.com
+
+  #     - name: Build Docker Image
+  #       run: |
+  #         docker build -t my-app:latest .
+  #         docker tag my-app:latest 083592952377.dkr.ecr.eu-central-1.amazonaws.com/my-app:latest
+
+  #     # - name: Push Docker Image to ECR
+  #     #   run: |
+  #     #     docker push 083592952377.dkr.ecr.eu-central-1.amazonaws.com/my-app:latest
+
+  #     # - name: Start AWS Inspector Scan
+  #     #   run: |
+  #     #     aws inspector2 start-scan --resource-group-arn arn:aws:inspector2:eu-central-1:083592952377:resourcegroup/ecr
+
+  #     - name: Inspector Scan
+  #       id: inspector
+  #       uses: aws-actions/vulnerability-scan-github-action-for-amazon-inspector@v1
+  #       with:
+  #         artifact_type: 'container'
+
+  #         artifact_path: 'my-app:latest'
+
+  #         display_vulnerability_findings: "enabled"
+
+  #         critical_threshold: 1
+  #         high_threshold: 1
+  #         medium_threshold: 1
+  #         low_threshold: 1
+  #         other_threshold: 1
+      
+  #     - name: Upload Scan Results
+  #       uses: actions/upload-artifact@v4
+  #       with:
+  #         name: Inspector Vulnerability Scan Artifacts
+  #         path: |
+  #           ${{ steps.inspector.outputs.inspector_scan_results }}
+  #           ${{ steps.inspector.outputs.inspector_scan_results_csv }}
+  #           ${{ steps.inspector.outputs.artifact_sbom }}
+  #           ${{ steps.inspector.outputs.inspector_scan_results_markdown }}
